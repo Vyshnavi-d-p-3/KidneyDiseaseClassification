@@ -15,3 +15,114 @@
 [2025-05-09 15:52:12,957: INFO: main: >>>> stage Data Ingestion stage completed <<<<< 
 
  X=====X]
+[2025-05-09 17:36:35,435: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:36:35,438: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:36:35,438: INFO: common: created directory at: artifacts]
+[2025-05-09 17:36:35,439: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:38:39,565: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:38:39,567: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:38:39,568: INFO: common: created directory at: artifacts]
+[2025-05-09 17:38:39,569: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:38:45,831: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:38:45,833: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:38:45,834: INFO: common: created directory at: artifacts]
+[2025-05-09 17:38:45,835: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:39:53,141: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:39:53,143: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:39:53,144: INFO: common: created directory at: artifacts]
+[2025-05-09 17:39:53,144: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:40:02,782: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:40:02,784: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:40:02,785: INFO: common: created directory at: artifacts]
+[2025-05-09 17:40:02,787: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:40:59,012: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:40:59,014: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:40:59,015: INFO: common: created directory at: artifacts]
+[2025-05-09 17:40:59,015: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:42:24,056: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:42:24,058: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:42:24,060: INFO: common: created directory at: artifacts]
+[2025-05-09 17:42:24,060: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 17:42:27,686: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-09 17:42:27,727: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-09 17:42:27,728: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-09 17:57:35,552: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-09 17:57:35,553: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 17:57:35,554: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 17:57:35,554: INFO: common: created directory at: artifacts]
+[2025-05-09 17:57:35,554: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-09 17:57:35,554: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-09 18:11:43,744: ERROR: main: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/urllib3/response.py", line 748, in _error_catcher
+    yield
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/urllib3/response.py", line 873, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/urllib3/response.py", line 856, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/http/client.py", line 459, in read
+    n = self.readinto(b)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/http/client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/socket.py", line 681, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/urllib3/response.py", line 1060, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/urllib3/response.py", line 949, in read
+    data = self._raw_read(amt)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/urllib3/response.py", line 902, in _raw_read
+    self._fp.close()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/urllib3/response.py", line 775, in _error_catcher
+    raise ProtocolError(f"Connection broken: {e!r}", e) from e
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/data_ingestion.py", line 31, in download_file
+    raise e
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/data_ingestion.py", line 26, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/gdown/download.py", line 368, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/requests/models.py", line 822, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionResetError(54, 'Connection reset by peer')", ConnectionResetError(54, 'Connection reset by peer'))
+[2025-05-09 18:21:43,328: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-09 18:21:43,329: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 18:21:43,329: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 18:21:43,329: INFO: common: created directory at: artifacts]
+[2025-05-09 18:21:43,329: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-09 18:21:43,329: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-09 18:22:16,587: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-09 18:22:21,542: INFO: main: >>>> stage Data Ingestion stage completed <<<<< 
+
+ X=====X]
+[2025-05-09 18:22:21,543: INFO: main: >>>>> stage Prepare Base Model started <<<<<<]
+[2025-05-09 18:22:21,544: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-09 18:22:21,544: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-09 18:22:21,544: INFO: common: created directory at: artifacts]
+[2025-05-09 18:22:21,544: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-09 18:22:21,703: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-09 18:22:21,735: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-09 18:22:21,736: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-09 18:22:21,767: INFO: main: >>>> stage Prepare Base Model completed <<<<< 
+
+ X=====X]
