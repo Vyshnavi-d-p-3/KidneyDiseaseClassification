@@ -1,5 +1,5 @@
 from cnnClassifier.config.configuration import ConfigurationManager
-from cnnClassifier.components.mode_training import Training
+from cnnClassifier.components.model_training import Training
 from cnnClassifier import logger
 
 

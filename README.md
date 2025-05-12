@@ -34,3 +34,22 @@ conda create -n cnncls python=3.8 -y
 ```bash
 conda activate cnncls
 ```
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI = https://dagshub.com/Vyshnavi-d-p-3/KidneyDiseaseClassification.mlflow
+MLFLOW_TRACKING_USERNAME = Vyshnavi-d-p-3
+MLFLOW_TRACKING_PASSWORD = 24ddf9e30772a735f3355accd6c53766fca99e41
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/Vyshnavi-d-p-3/KidneyDiseaseClassification.mlflow
+
+export MLFOW_TRACKING_USERNAME=Vyshnavi-d-p-3
+
+export MLFLOW_TRACKING_PASSWORD=24ddf9e30772a735f3355accd6c53766fca99e41
+
+```
