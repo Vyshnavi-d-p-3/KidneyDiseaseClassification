@@ -486,3 +486,43 @@ x======x]
 [2025-05-12 17:33:13,154: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-05-12 18:01:01,619: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:02:12,506: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:02:13,636: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-12 18:02:13,636: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-12 18:02:27,341: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:02:27] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:02:27,443: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:02:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-05-12 18:02:35,402: INFO: _internal: 192.168.1.167 - - [12/May/2025 18:02:35] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:02:35,433: INFO: _internal: 192.168.1.167 - - [12/May/2025 18:02:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-05-12 18:02:39,504: INFO: _internal: 192.168.1.167 - - [12/May/2025 18:02:39] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:02:43,062: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:02:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:17,525: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:17] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:03:17,542: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:18,438: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:18] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:03:18,451: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:19,103: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:19] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:03:19,114: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:37,709: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:04:40,715: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:04:41,518: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-12 18:04:41,518: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-12 18:04:44,364: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:04:44] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:14,973: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:14] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:15,993: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:15] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:35,775: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:05:36,730: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-12 18:05:36,730: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-12 18:05:37,837: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:37] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:56,927: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 18:05:57,109: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:57] "POST /predict HTTP/1.1" 200 -]
+[2025-05-12 18:06:09,637: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 18:06:09,765: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:06:09] "POST /predict HTTP/1.1" 200 -]
