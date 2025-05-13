@@ -79,3 +79,8 @@ x==========x]
 [2025-05-12 11:10:27,772: INFO: common: yaml file: config/config.yaml loaded successfully]
 [2025-05-12 11:10:27,773: INFO: common: yaml file: params.yaml loaded successfully]
 [2025-05-12 11:10:27,773: INFO: common: created directory at: artifacts]
+[2025-05-12 11:12:48,089: INFO: common: json file saved at: scores.json]
+[2025-05-12 11:12:48,090: INFO: common: json file saved at: scores.json]
+[2025-05-12 11:12:48,090: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
