@@ -3,6 +3,7 @@ from cnnClassifier.components.model_training import Training
 from cnnClassifier import logger
 
 
+
 STAGE_NAME = "Training"
 
 class ModelTrainingPipeline:

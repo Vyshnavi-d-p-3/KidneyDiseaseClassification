@@ -2,6 +2,7 @@ import os
 import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
+tf.data.experimental.enable_debug_mode()
 import time
 from pathlib import Path
 from cnnClassifier.entity.config_entity import TrainingConfig
@@ -15,6 +16,13 @@ class Training:
         self.model = tf.keras.models.load_model(
             self.config.updated_base_model_path
         )
+        # 🔧 Recompile the model to avoid variable mismatch errors
+        self.model.compile(
+            optimizer=tf.keras.optimizers.Adam(learning_rate=self.config.params_learning_rate),
+            loss="categorical_crossentropy",
+            metrics=["accuracy"]
+        )
+
 
     def train_valid_generator(self):
 
