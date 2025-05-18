@@ -4,6 +4,7 @@ import gdown
 from src.cnnClassifier import logger
 from src.cnnClassifier.utils.common import get_size
 from src.cnnClassifier.entity.config_entity import DataIngestionConfig
+from pathlib import Path
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
@@ -14,7 +15,12 @@ class DataIngestion:
         '''
         Fetch data from the url
         '''
-
+        zip_path   = Path(self.config.local_data_file)
+        extract_to = Path(self.config.unzip_dir)
+        # if zip exists AND unzip dir has files, skip
+        if zip_path.exists() and extract_to.exists() and any(extract_to.iterdir()):
+            logger.info("Artifacts already present; skipping download.")
+            return str(zip_path)
         try: 
             dataset_url = self.config.source_URL
             zip_download_dir = self.config.local_data_file
@@ -38,7 +44,11 @@ class DataIngestion:
         Extracts the zip file into the data directory
         Function returns None
         """
-        unzip_path = self.config.unzip_dir
+        unzip_path = Path(self.config.unzip_dir)
+        # if already extracted, skip
+        if unzip_path.exists() and any(unzip_path.iterdir()):
+            logger.info("Data already extracted; skipping unzip.")
+            return
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)

@@ -9,11 +9,20 @@ from cnnClassifier.entity.config_entity import TrainingConfig
 class Training:
     def __init__(self, config: TrainingConfig):
         self.config = config
-
+    
     
     def get_base_model(self):
+        # load *without* the old optimizer state
         self.model = tf.keras.models.load_model(
-            self.config.updated_base_model_path
+            self.config.updated_base_model_path,
+            compile=False
+        )
+        # recompile with a brand-new optimizer bound to these variables
+        self.model.compile(
+            optimizer=tf.keras.optimizers.SGD(learning_rate=self.config.params_learning_rate),
+            loss=tf.keras.losses.CategoricalCrossentropy(),
+            metrics=['accuracy'],
+            run_eagerly=True
         )
 
     def train_valid_generator(self):

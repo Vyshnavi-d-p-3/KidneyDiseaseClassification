@@ -18,6 +18,8 @@ class PrepareBaseModelConfig:
     params_include_top: bool
     params_weights: str
     params_classes: int
+    backbone: str = "vgg16"
+
 
 @dataclass(frozen=True)
 class TrainingConfig:
@@ -29,10 +31,12 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+    params_learning_rate: float
 
 @dataclass(frozen=True)
 class EvaluationConfig:
     path_of_model: Path
+    path_of_effnet_model: Path 
     training_data: Path
     all_params: dict
     mlflow_uri: str
