@@ -34,7 +34,7 @@ click-didyoumean==0.3.1
 click-plugins==1.1.1
 click-repl==0.3.0
 cloudpickle==3.1.1
--e git+https://github.com/Vyshnavi-d-p-3/KidneyDiseaseClassification.git@57fa3514aaedf0094ba8df9ff5cf8587bd72293a#egg=cnnClassifier
+-e git+https://github.com/Vyshnavi-d-p-3/KidneyDiseaseClassification.git@372b39e0e5bda9a47e6078513bf8b8f617c65cbc#egg=cnnClassifier
 colorama==0.4.6
 comm==0.2.2
 configobj==5.0.9
