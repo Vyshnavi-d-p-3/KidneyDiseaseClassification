@@ -79,3 +79,1057 @@ x==========x]
 [2025-05-12 11:10:27,772: INFO: common: yaml file: config/config.yaml loaded successfully]
 [2025-05-12 11:10:27,773: INFO: common: yaml file: params.yaml loaded successfully]
 [2025-05-12 11:10:27,773: INFO: common: created directory at: artifacts]
+[2025-05-12 11:46:08,402: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 11:46:08,407: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:46:08,410: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:46:08,411: INFO: common: created directory at: artifacts]
+[2025-05-12 11:46:08,412: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 11:46:08,412: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 11:51:17,876: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 11:51:35,701: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-12 11:51:35,702: INFO: main: *******************]
+[2025-05-12 11:51:35,702: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-12 11:51:35,703: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:51:35,706: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:51:35,707: INFO: common: created directory at: artifacts]
+[2025-05-12 11:51:35,707: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-12 11:51:36,040: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-12 11:51:36,165: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-12 11:51:36,237: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-12 11:51:36,237: INFO: main: *******************]
+[2025-05-12 11:51:36,237: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-12 11:51:36,239: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:51:36,240: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:51:36,240: INFO: common: created directory at: artifacts]
+[2025-05-12 11:51:36,241: INFO: common: created directory at: artifacts/training]
+[2025-05-12 11:51:36,333: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 11:51:37,400: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in train
+    self.model.fit(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-12 11:55:34,161: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 11:55:34,166: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:55:34,170: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:55:34,171: INFO: common: created directory at: artifacts]
+[2025-05-12 11:55:34,171: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 11:55:34,171: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 11:58:51,687: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 11:59:44,457: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-12 11:59:44,458: INFO: main: *******************]
+[2025-05-12 11:59:44,458: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-12 11:59:44,464: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:59:44,469: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:59:44,471: INFO: common: created directory at: artifacts]
+[2025-05-12 11:59:44,471: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-12 11:59:44,912: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-12 11:59:45,076: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-12 11:59:45,234: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-12 11:59:45,235: INFO: main: *******************]
+[2025-05-12 11:59:45,235: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-12 11:59:45,236: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:59:45,238: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:59:45,238: INFO: common: created directory at: artifacts]
+[2025-05-12 11:59:45,238: INFO: common: created directory at: artifacts/training]
+[2025-05-12 11:59:45,318: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 11:59:46,946: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in train
+    self.model.fit(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-17 20:05:25,839: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 20:05:25,848: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:05:25,888: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:05:25,889: INFO: common: created directory at: artifacts]
+[2025-05-17 20:05:25,889: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 20:05:25,889: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-17 20:05:52,193: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-17 20:06:55,679: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 20:06:55,679: INFO: main: *******************]
+[2025-05-17 20:06:55,679: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 20:06:55,682: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:06:55,684: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:06:55,684: INFO: common: created directory at: artifacts]
+[2025-05-17 20:06:55,684: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 20:06:56,047: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:06:56,147: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:06:56,255: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 20:06:56,255: INFO: main: *******************]
+[2025-05-17 20:06:56,255: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 20:06:56,258: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:06:56,260: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:06:56,260: INFO: common: created directory at: artifacts]
+[2025-05-17 20:06:56,260: INFO: common: created directory at: artifacts/training]
+[2025-05-17 20:06:56,352: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-17 20:06:57,568: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in train
+    self.model.fit(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-17 20:25:00,467: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 20:25:00,471: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:25:00,474: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:25:00,475: INFO: common: created directory at: artifacts]
+[2025-05-17 20:25:00,475: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 20:25:00,475: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 20:25:00,475: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 20:25:00,475: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 20:25:00,475: INFO: main: *******************]
+[2025-05-17 20:25:00,475: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 20:25:00,477: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:25:00,479: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:25:00,479: INFO: common: created directory at: artifacts]
+[2025-05-17 20:25:00,479: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 20:25:00,912: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:25:01,024: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:25:01,105: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 20:25:01,106: INFO: main: *******************]
+[2025-05-17 20:25:01,106: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 20:25:01,108: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:25:01,111: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:25:01,111: INFO: common: created directory at: artifacts]
+[2025-05-17 20:25:01,111: INFO: common: created directory at: artifacts/training]
+[2025-05-17 20:25:01,205: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-17 20:25:02,439: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in train
+    self.model.fit(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-17 20:35:06,938: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 20:35:06,942: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:35:06,946: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:35:06,947: INFO: common: created directory at: artifacts]
+[2025-05-17 20:35:06,947: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 20:35:06,947: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 20:35:06,947: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 20:35:06,947: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 20:35:06,947: INFO: main: *******************]
+[2025-05-17 20:35:06,947: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 20:35:06,949: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:35:06,951: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:35:06,951: INFO: common: created directory at: artifacts]
+[2025-05-17 20:35:06,951: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 20:35:07,343: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:35:07,467: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:35:07,545: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 20:35:07,545: INFO: main: *******************]
+[2025-05-17 20:35:07,545: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 20:35:07,547: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:35:07,549: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:35:07,549: INFO: common: created directory at: artifacts]
+[2025-05-17 20:35:07,549: INFO: common: created directory at: artifacts/training]
+[2025-05-17 20:35:07,649: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-17 20:35:20,382: ERROR: main: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.00303464  0.01533189]
+ [ 0.01014781  0.00193227]
+ [ 0.00345832  0.00194382]
+ ...
+ [ 0.01424574 -0.00163938]
+ [-0.01277002  0.01271397]
+ [ 0.00059433  0.0072934 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 77, in train
+    self.model.fit(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py", line 329, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.00303464  0.01533189]
+ [ 0.01014781  0.00193227]
+ [ 0.00345832  0.00194382]
+ ...
+ [ 0.01424574 -0.00163938]
+ [-0.01277002  0.01271397]
+ [ 0.00059433  0.0072934 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2025-05-17 20:38:51,480: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 20:38:51,483: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:38:51,486: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:38:51,486: INFO: common: created directory at: artifacts]
+[2025-05-17 20:38:51,486: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 20:38:51,487: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 20:38:51,487: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 20:38:51,487: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 20:38:51,487: INFO: main: *******************]
+[2025-05-17 20:38:51,487: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 20:38:51,488: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:38:51,490: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:38:51,490: INFO: common: created directory at: artifacts]
+[2025-05-17 20:38:51,490: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 20:38:51,849: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:38:51,969: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:38:52,058: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 20:38:52,058: INFO: main: *******************]
+[2025-05-17 20:38:52,058: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 20:38:52,060: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:38:52,061: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:38:52,062: INFO: common: created directory at: artifacts]
+[2025-05-17 20:38:52,062: INFO: common: created directory at: artifacts/training]
+[2025-05-17 20:38:52,157: ERROR: main: 'TrainingConfig' object has no attribute 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 16, in main
+    training.get_base_model()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 22, in get_base_model
+    optimizer=tf.keras.optimizers.SGD(learning_rate=self.config.params_learning_rate),
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrainingConfig' object has no attribute 'params_learning_rate'
+[2025-05-17 20:54:28,214: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 20:54:28,217: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:54:28,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:54:28,220: INFO: common: created directory at: artifacts]
+[2025-05-17 20:54:28,220: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 20:54:28,221: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 20:54:28,221: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 20:54:28,221: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 20:54:28,221: INFO: main: *******************]
+[2025-05-17 20:54:28,221: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 20:54:28,222: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:54:28,224: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:54:28,224: INFO: common: created directory at: artifacts]
+[2025-05-17 20:54:28,224: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 20:54:28,596: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:54:28,707: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:54:28,803: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 20:54:28,803: INFO: main: *******************]
+[2025-05-17 20:54:28,803: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 20:54:28,805: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:54:28,807: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:54:28,807: INFO: common: created directory at: artifacts]
+[2025-05-17 20:54:28,807: INFO: common: created directory at: artifacts/training]
+[2025-05-17 20:54:28,807: ERROR: main: TrainingConfig.__init__() missing 1 required positional argument: 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 14, in main
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/config/configuration.py", line 71, in get_training_config
+    training_config = TrainingConfig(
+                      ^^^^^^^^^^^^^^^
+TypeError: TrainingConfig.__init__() missing 1 required positional argument: 'params_learning_rate'
+[2025-05-17 20:57:00,926: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 20:57:00,929: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:57:00,932: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:57:00,933: INFO: common: created directory at: artifacts]
+[2025-05-17 20:57:00,933: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 20:57:00,933: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 20:57:00,934: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 20:57:00,934: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 20:57:00,934: INFO: main: *******************]
+[2025-05-17 20:57:00,934: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 20:57:00,935: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:57:00,937: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:57:00,937: INFO: common: created directory at: artifacts]
+[2025-05-17 20:57:00,937: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 20:57:01,329: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:57:01,436: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:57:01,531: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 20:57:01,531: INFO: main: *******************]
+[2025-05-17 20:57:01,531: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 20:57:01,533: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:57:01,534: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:57:01,535: INFO: common: created directory at: artifacts]
+[2025-05-17 20:57:01,535: INFO: common: created directory at: artifacts/training]
+[2025-05-17 20:57:01,535: ERROR: main: TrainingConfig.__init__() missing 1 required positional argument: 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 14, in main
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/config/configuration.py", line 71, in get_training_config
+    training_config = TrainingConfig(
+                      ^^^^^^^^^^^^^^^
+TypeError: TrainingConfig.__init__() missing 1 required positional argument: 'params_learning_rate'
+[2025-05-17 20:59:46,657: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 20:59:46,661: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:59:46,664: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:59:46,665: INFO: common: created directory at: artifacts]
+[2025-05-17 20:59:46,665: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 20:59:46,665: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 20:59:46,665: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 20:59:46,665: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 20:59:46,665: INFO: main: *******************]
+[2025-05-17 20:59:46,665: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 20:59:46,667: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:59:46,668: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:59:46,668: INFO: common: created directory at: artifacts]
+[2025-05-17 20:59:46,668: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 20:59:47,005: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:59:47,112: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 20:59:47,205: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 20:59:47,205: INFO: main: *******************]
+[2025-05-17 20:59:47,205: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 20:59:47,208: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 20:59:47,210: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 20:59:47,210: INFO: common: created directory at: artifacts]
+[2025-05-17 20:59:47,210: INFO: common: created directory at: artifacts/training]
+[2025-05-17 20:59:47,210: ERROR: main: TrainingConfig.__init__() missing 1 required positional argument: 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 42, in <module>
+    model_trainer.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 14, in main
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/config/configuration.py", line 71, in get_training_config
+    training_config = TrainingConfig(
+                      ^^^^^^^^^^^^^^^
+TypeError: TrainingConfig.__init__() missing 1 required positional argument: 'params_learning_rate'
+[2025-05-17 21:03:38,695: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 21:03:38,699: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 21:03:38,702: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 21:03:38,702: INFO: common: created directory at: artifacts]
+[2025-05-17 21:03:38,702: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 21:03:38,702: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 21:03:38,702: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 21:03:38,702: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 21:03:38,702: INFO: main: *******************]
+[2025-05-17 21:03:38,702: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 21:03:38,704: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 21:03:38,706: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 21:03:38,706: INFO: common: created directory at: artifacts]
+[2025-05-17 21:03:38,706: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 21:03:39,032: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 21:03:39,128: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 21:03:39,221: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 21:03:39,221: INFO: main: *******************]
+[2025-05-17 21:03:39,221: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 21:03:39,223: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 21:03:39,225: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 21:03:39,225: INFO: common: created directory at: artifacts]
+[2025-05-17 21:03:39,225: INFO: common: created directory at: artifacts/training]
+[2025-05-17 22:49:47,714: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-17 22:49:47,721: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 22:49:47,728: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 22:49:47,729: INFO: common: created directory at: artifacts]
+[2025-05-17 22:49:47,729: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-17 22:49:47,729: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-17 22:49:47,729: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-17 22:49:47,729: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-17 22:49:47,729: INFO: main: *******************]
+[2025-05-17 22:49:47,729: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-17 22:49:47,730: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 22:49:47,731: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 22:49:47,731: INFO: common: created directory at: artifacts]
+[2025-05-17 22:49:47,731: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-17 22:49:47,998: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 22:49:48,060: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-17 22:49:48,112: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-17 22:49:48,112: INFO: main: *******************]
+[2025-05-17 22:49:48,112: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-17 22:49:48,113: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-17 22:49:48,114: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-17 22:49:48,114: INFO: common: created directory at: artifacts]
+[2025-05-17 22:49:48,114: INFO: common: created directory at: artifacts/training]
+[2025-05-18 00:17:40,708: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 00:17:40,780: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-18 00:17:40,780: INFO: main: *******************]
+[2025-05-18 00:17:40,780: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-18 00:17:40,785: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 00:17:40,788: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 00:17:40,788: INFO: common: created directory at: artifacts]
+[2025-05-18 00:17:40,788: ERROR: main: EvaluationConfig.__init__() missing 1 required positional argument: 'path_of_effnet_model']
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/main.py", line 56, in <module>
+    model_evalution.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 16, in main
+    eval_config = config.get_evaluation_config()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/config/configuration.py", line 93, in get_evaluation_config
+    eval_config = EvaluationConfig(
+                  ^^^^^^^^^^^^^^^^^
+TypeError: EvaluationConfig.__init__() missing 1 required positional argument: 'path_of_effnet_model'
+[2025-05-18 00:21:54,588: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-18 00:21:54,592: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 00:21:54,594: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 00:21:54,594: INFO: common: created directory at: artifacts]
+[2025-05-18 00:21:54,594: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-18 00:21:54,595: INFO: data_ingestion: Artifacts already present; skipping download.]
+[2025-05-18 00:21:54,595: INFO: data_ingestion: Data already extracted; skipping unzip.]
+[2025-05-18 00:21:54,595: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-18 00:21:54,595: INFO: main: *******************]
+[2025-05-18 00:21:54,595: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-18 00:21:54,597: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 00:21:54,599: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 00:21:54,599: INFO: common: created directory at: artifacts]
+[2025-05-18 00:21:54,599: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-18 00:21:54,912: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 00:21:54,992: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 00:21:55,051: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-18 00:21:55,051: INFO: main: *******************]
+[2025-05-18 00:21:55,051: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-18 00:21:55,054: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 00:21:55,057: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 00:21:55,057: INFO: common: created directory at: artifacts]
+[2025-05-18 00:21:55,057: INFO: common: created directory at: artifacts/training]
+[2025-05-18 09:02:24,321: INFO: run: >>> Starting stage_02b_prepare_effnet_model <<<]
+[2025-05-18 09:02:24,325: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 09:02:24,328: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 09:02:24,328: INFO: common: created directory at: artifacts]
+[2025-05-18 09:02:25,997: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 09:02:26,179: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 09:02:26,259: INFO: run: >>> Completed stage_02b_prepare_effnet_model <<<]
+[2025-05-18 09:04:02,966: INFO: run: >>> Starting stage_03b_model_training_effnet <<<]
+[2025-05-18 09:04:02,969: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 09:04:02,972: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 09:04:02,972: INFO: common: created directory at: artifacts]
+[2025-05-18 09:04:02,972: ERROR: stage_03b_model_training_effnet: Error in Training EfficientNet-B0]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 15, in main
+    train_cfg = cfg.get_training_effnet_config()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/config/configuration.py", line 131, in get_training_effnet_config
+    root_dir                = Path(tc.root_dir),
+                                   ^^
+NameError: name 'tc' is not defined
+[2025-05-18 09:04:02,977: ERROR: run: Error running stage_03b_model_training_effnet]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 26, in main
+    raise e
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 15, in main
+    train_cfg = cfg.get_training_effnet_config()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/config/configuration.py", line 131, in get_training_effnet_config
+    root_dir                = Path(tc.root_dir),
+                                   ^^
+NameError: name 'tc' is not defined
+[2025-05-18 09:10:42,814: INFO: run: >>> Starting stage_03b_model_training_effnet <<<]
+[2025-05-18 09:10:42,819: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 09:10:42,824: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 09:10:42,825: INFO: common: created directory at: artifacts]
+[2025-05-18 09:10:42,826: INFO: common: created directory at: artifacts/training_effnet]
+[2025-05-18 09:16:33,632: INFO: run: >>> Starting stage_03b_model_training_effnet <<<]
+[2025-05-18 09:16:33,636: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 09:16:33,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 09:16:33,638: INFO: common: created directory at: artifacts]
+[2025-05-18 09:16:33,638: INFO: common: created directory at: artifacts/training_effnet]
+[2025-05-18 09:42:44,031: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 09:42:44,070: ERROR: stage_03b_model_training_effnet: Error in Training EfficientNet-B0]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 92, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in save_model
+    model.save(path)
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 201, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'module' object
+[2025-05-18 09:42:44,082: ERROR: run: Error running stage_03b_model_training_effnet]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 26, in main
+    raise e
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 92, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in save_model
+    model.save(path)
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 201, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'module' object
+[2025-05-18 11:14:34,337: INFO: run: >>> Starting stage_03b_model_training_effnet <<<]
+[2025-05-18 11:14:34,339: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 11:14:34,341: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 11:14:34,342: INFO: common: created directory at: artifacts]
+[2025-05-18 11:14:34,342: INFO: common: created directory at: artifacts/training_effnet]
+[2025-05-18 11:40:38,386: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 11:40:38,433: ERROR: stage_03b_model_training_effnet: Error in Training EfficientNet-B0]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 92, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in save_model
+    model.save(path, include_optimizer=False)
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 201, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'module' object
+[2025-05-18 11:40:38,444: ERROR: run: Error running stage_03b_model_training_effnet]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 26, in main
+    raise e
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 92, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in save_model
+    model.save(path, include_optimizer=False)
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 201, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/copy.py", line 151, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'module' object
+[2025-05-18 11:45:25,298: INFO: run: >>> Starting stage_03b_model_training_effnet <<<]
+[2025-05-18 11:45:25,300: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 11:45:25,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 11:45:25,303: INFO: common: created directory at: artifacts]
+[2025-05-18 11:45:25,303: INFO: common: created directory at: artifacts/training_effnet]
+[2025-05-18 12:14:48,392: ERROR: stage_03b_model_training_effnet: Error in Training EfficientNet-B0]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 93, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 76, in save_model
+    model.save(path, include_optimizer=False, save_format="tf")
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/saving/saving_api.py", line 69, in save_model
+    raise ValueError(
+ValueError: The `save_format` argument is deprecated in Keras 3. Please remove this argument and pass a file path with either `.keras` or `.h5` extension.Received: save_format=tf
+[2025-05-18 12:14:48,413: ERROR: run: Error running stage_03b_model_training_effnet]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 26, in main
+    raise e
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 93, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 76, in save_model
+    model.save(path, include_optimizer=False, save_format="tf")
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/saving/saving_api.py", line 69, in save_model
+    raise ValueError(
+ValueError: The `save_format` argument is deprecated in Keras 3. Please remove this argument and pass a file path with either `.keras` or `.h5` extension.Received: save_format=tf
+[2025-05-18 12:27:21,271: INFO: run: >>> Starting stage_03b_model_training_effnet <<<]
+[2025-05-18 12:27:21,275: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 12:27:21,277: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 12:27:21,277: INFO: common: created directory at: artifacts]
+[2025-05-18 12:27:21,277: INFO: common: created directory at: artifacts/training_effnet]
+[2025-05-18 12:50:04,454: ERROR: stage_03b_model_training_effnet: Error in Training EfficientNet-B0]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 93, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 76, in save_model
+    model.save(path, include_optimizer=False)
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/saving/saving_api.py", line 114, in save_model
+    raise ValueError(
+ValueError: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=artifacts/training_effnet/model.
+[2025-05-18 12:50:04,466: ERROR: run: Error running stage_03b_model_training_effnet]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 26, in main
+    raise e
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03b_model_training_effnet.py", line 23, in main
+    trainer.train()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 93, in train
+    self.save_model(
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 76, in save_model
+    model.save(path, include_optimizer=False)
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/venv/lib/python3.12/site-packages/keras/src/saving/saving_api.py", line 114, in save_model
+    raise ValueError(
+ValueError: Invalid filepath extension for saving. Please add either a `.keras` extension for the native Keras format (recommended) or a `.h5` extension. Use `model.export(filepath)` if you want to export a SavedModel for use with TFLite/TFServing/etc. Received: filepath=artifacts/training_effnet/model.
+[2025-05-18 12:57:58,219: INFO: run: >>> Starting stage_03b_model_training_effnet <<<]
+[2025-05-18 12:57:58,223: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 12:57:58,224: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 12:57:58,225: INFO: common: created directory at: artifacts]
+[2025-05-18 12:57:58,225: INFO: common: created directory at: artifacts/training_effnet]
+[2025-05-18 13:08:24,046: INFO: run: >>> Completed stage_03b_model_training_effnet <<<]
+[2025-05-18 13:14:51,756: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-18 13:14:51,760: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 13:14:51,762: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 13:14:51,762: INFO: common: created directory at: artifacts]
+[2025-05-18 13:14:51,762: ERROR: run: Error running stage_04_model_evaluation]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Evaluation' object has no attribute 'evaluation'. Did you mean: 'evaluate'?
+[2025-05-18 13:19:48,500: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-18 13:19:48,504: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 13:19:48,506: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 13:19:48,506: INFO: common: created directory at: artifacts]
+[2025-05-18 13:47:22,939: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-18 13:47:22,942: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 13:47:22,944: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 13:47:22,945: INFO: common: created directory at: artifacts]
+[2025-05-18 14:29:19,835: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-18 14:29:19,847: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 14:29:19,887: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 14:29:19,888: INFO: common: created directory at: artifacts]
+[2025-05-18 19:59:41,720: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-18 19:59:41,728: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 19:59:41,733: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 19:59:41,734: INFO: common: created directory at: artifacts]
+[2025-05-18 20:20:40,336: INFO: run: >>> Starting stage_02_prepare_base_model <<<]
+[2025-05-18 20:20:40,339: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 20:20:40,341: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 20:20:40,341: INFO: common: created directory at: artifacts]
+[2025-05-18 20:20:40,341: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-18 20:20:40,662: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-18 20:20:40,816: INFO: run: >>> Completed stage_02_prepare_base_model <<<]
+[2025-05-18 20:20:53,336: INFO: run: >>> Starting stage_03_model_training <<<]
+[2025-05-18 20:20:53,340: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 20:20:53,342: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 20:20:53,342: INFO: common: created directory at: artifacts]
+[2025-05-18 20:20:53,342: INFO: common: created directory at: artifacts/training]
+[2025-05-18 22:06:08,040: INFO: run: >>> Completed stage_03_model_training <<<]
+[2025-05-18 23:12:38,045: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-18 23:12:38,049: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-18 23:12:38,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 23:12:38,051: INFO: common: created directory at: artifacts]
+[2025-05-19 08:08:34,346: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-19 08:08:34,351: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-19 08:08:34,353: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 08:08:34,353: INFO: common: created directory at: artifacts]
+[2025-05-19 08:31:40,361: ERROR: run: Error running stage_04_model_evaluation]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 19, in main
+    evaluation.evaluate()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_evaluation_mlflow.py", line 101, in evaluate
+    print(json.dumps(self.scores, indent=2))
+          ^^^^
+NameError: name 'json' is not defined. Did you forget to import 'json'
+[2025-05-19 08:33:16,292: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-19 08:33:16,295: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-19 08:33:16,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 08:33:16,298: INFO: common: created directory at: artifacts]
+[2025-05-19 08:43:56,879: INFO: common: json file saved at: scores.json]
+[2025-05-19 08:43:56,880: ERROR: run: Error running stage_04_model_evaluation]
+Traceback (most recent call last):
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/run.py", line 39, in main
+    pipeline.main()
+  File "/Users/spartan/Desktop/desktop/USA/2 Sem/258/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 21, in main
+    evaluation.save_score()
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Evaluation' object has no attribute 'save_score'
+[2025-05-19 08:51:03,374: INFO: run: >>> Starting stage_04_model_evaluation <<<]
+[2025-05-19 08:51:03,378: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-19 08:51:03,380: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-19 08:51:03,381: INFO: common: created directory at: artifacts]
+[2025-05-19 09:02:55,911: INFO: common: json file saved at: scores.json]
+[2025-05-19 09:02:55,916: INFO: common: json file saved at: scores.json]
+[2025-05-19 09:02:55,916: INFO: run: >>> Completed stage_04_model_evaluation <<<]

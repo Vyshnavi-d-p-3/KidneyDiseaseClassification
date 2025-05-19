@@ -9,11 +9,11 @@ data_ingestion:
 prepare_base_model:
   root_dir: artifacts/prepare_base_model
   base_model_path: artifacts/prepare_base_model/base_model.h5
-  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.keras
 
 training:
   root_dir: artifacts/training
-  trained_model_path: artifacts/training/model.h5
+  trained_model_path: artifacts/training/model.keras   # ← trained version
 
 
 prepare_effnet:
@@ -23,4 +23,4 @@ prepare_effnet:
 
 training_effnet:
   root_dir: artifacts/training_effnet
-  trained_model_path: artifacts/training_effnet/model.h5
+  trained_model_path: artifacts/training_effnet/model.keras

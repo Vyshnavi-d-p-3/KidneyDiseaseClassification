@@ -3,6 +3,7 @@ import sys, subprocess
 import numpy as np
 import tensorflow as tf
 from sklearn.metrics import accuracy_score
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # 1) Run your existing pipeline (VGG only)
 ret = subprocess.call([sys.executable, "main.py"])
@@ -40,10 +41,25 @@ eff_model  = tf.keras.models.load_model(eff_path, compile=False)
 
 # build a small validation generator
 eval_cfg = cfg_mgr.get_evaluation_config()
-val_gen = EvaluationPipeline._build_validation_generator(eval_cfg)  # or reuse whatever you have
+val_datagen = ImageDataGenerator(
+    rescale=1.0 / 255,
+    validation_split=0.30
+)
+
+val_gen = val_datagen.flow_from_directory(
+    directory=eval_cfg.training_data,
+    target_size=eval_cfg.params_image_size[:-1],
+    batch_size=eval_cfg.params_batch_size,
+    interpolation="bilinear",
+    shuffle=False,
+    subset="validation"
+)
+
+# val_gen = EvaluationPipeline._build_validation_generator(eval_cfg)  # or reuse whatever you have
 
 y_true, y_pred = [], []
-for x_batch, y_batch in val_gen:
+for i, (x_batch, y_batch) in enumerate(val_gen):
+    print(f"Batch {i + 1}/{len(val_gen)}")  # Add this
     pv = vgg_model.predict(x_batch, verbose=0)
     pe = eff_model.predict(x_batch, verbose=0)
     p_ens = 0.4 * pv + 0.6 * pe

@@ -96,7 +96,7 @@ class PrepareBaseModel:
         """
         Saves the model to the given path.
         """
-        model.save(path)
+        model.save(path, include_optimizer=False)
 
     @staticmethod
     def _ensure_directory(path: Path):
