@@ -1,0 +1,15 @@
+artifact_uri: file:///Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/mlruns/0/1c1359e3dcff4f7a8fef62be3e8bd528/artifacts
+end_time: 1747086216721
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1c1359e3dcff4f7a8fef62be3e8bd528
+run_name: serious-turtle-252
+run_uuid: 1c1359e3dcff4f7a8fef62be3e8bd528
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747086213159
+status: 3
+tags: []
+user_id: vyshu

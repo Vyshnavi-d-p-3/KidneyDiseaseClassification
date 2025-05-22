@@ -1,0 +1,755 @@
+[2025-05-12 09:50:19,485: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 09:50:19,486: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 09:50:19,486: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 09:50:19,486: INFO: common: created directory at: artifacts]
+[2025-05-12 09:50:19,486: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 09:50:19,486: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 09:50:46,515: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 09:50:51,189: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-12 09:50:51,189: INFO: main: *******************]
+[2025-05-12 09:50:51,189: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-12 09:50:51,190: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 09:50:51,191: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 09:50:51,191: INFO: common: created directory at: artifacts]
+[2025-05-12 09:50:51,191: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-12 09:50:51,360: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 09:50:51,393: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 09:50:51,393: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 09:50:51,418: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-12 09:50:51,418: INFO: main: *******************]
+[2025-05-12 09:50:51,418: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-12 09:50:51,419: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 09:50:51,419: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 09:50:51,419: INFO: common: created directory at: artifacts]
+[2025-05-12 09:50:51,419: INFO: common: created directory at: artifacts/training]
+[2025-05-12 09:58:09,040: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-12 09:58:09,042: INFO: main: *******************]
+[2025-05-12 09:58:09,042: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-12 09:58:09,043: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 09:58:09,044: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 09:58:09,044: INFO: common: created directory at: artifacts]
+[2025-05-12 10:00:18,261: INFO: common: json file saved at: scores.json]
+[2025-05-12 10:00:18,262: INFO: common: json file saved at: scores.json]
+[2025-05-12 10:00:18,262: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-12 10:18:54,326: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 10:18:54,327: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 10:18:54,327: INFO: common: created directory at: artifacts]
+[2025-05-12 10:21:06,960: INFO: common: json file saved at: scores.json]
+[2025-05-12 11:02:22,433: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 11:02:22,434: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:02:22,434: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:02:22,435: INFO: common: created directory at: artifacts]
+[2025-05-12 11:02:22,435: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 11:02:22,435: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 11:02:44,357: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 11:02:49,022: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-12 11:02:49,023: INFO: main: *******************]
+[2025-05-12 11:02:49,023: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-12 11:02:49,023: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:02:49,024: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:02:49,024: INFO: common: created directory at: artifacts]
+[2025-05-12 11:02:49,024: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-12 11:02:49,190: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 11:02:49,222: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 11:02:49,223: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 11:02:49,247: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-12 11:02:49,247: INFO: main: *******************]
+[2025-05-12 11:02:49,247: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-12 11:02:49,247: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:02:49,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:02:49,248: INFO: common: created directory at: artifacts]
+[2025-05-12 11:02:49,248: INFO: common: created directory at: artifacts/training]
+[2025-05-12 11:10:27,769: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-12 11:10:27,771: INFO: main: *******************]
+[2025-05-12 11:10:27,771: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-12 11:10:27,772: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:10:27,773: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:10:27,773: INFO: common: created directory at: artifacts]
+[2025-05-12 11:12:48,089: INFO: common: json file saved at: scores.json]
+[2025-05-12 11:12:48,090: INFO: common: json file saved at: scores.json]
+[2025-05-12 11:12:48,090: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-12 11:35:22,558: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:35:22,560: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:35:22,560: INFO: common: created directory at: artifacts]
+[2025-05-12 11:37:38,476: INFO: common: json file saved at: scores.json]
+[2025-05-12 11:40:42,734: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:40:42,736: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:40:42,736: INFO: common: created directory at: artifacts]
+[2025-05-12 11:42:55,425: INFO: common: json file saved at: scores.json]
+[2025-05-12 11:57:36,415: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 11:57:36,416: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 11:57:36,416: INFO: common: created directory at: artifacts]
+[2025-05-12 11:59:58,850: INFO: common: json file saved at: scores.json]
+[2025-05-12 12:02:14,990: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 12:02:14,993: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 12:02:14,994: INFO: common: created directory at: artifacts]
+[2025-05-12 12:04:33,615: INFO: common: json file saved at: scores.json]
+[2025-05-12 14:18:06,689: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:18:06,692: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:18:06,693: INFO: common: created directory at: artifacts]
+[2025-05-12 14:20:19,217: INFO: common: json file saved at: scores.json]
+[2025-05-12 14:20:20,624: INFO: builder_impl: Assets written to: /var/folders/qv/03zp2qbx5dvd8k_vpgjwc23w0000gn/T/tmplbx8jygs/model/data/model/assets]
+[2025-05-12 14:21:29,789: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 14:21:29,790: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:21:29,790: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:21:29,790: INFO: common: created directory at: artifacts]
+[2025-05-12 14:21:29,790: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 14:21:29,790: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 14:21:46,824: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 14:21:51,326: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-12 14:21:51,326: INFO: main: *******************]
+[2025-05-12 14:21:51,326: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-12 14:21:51,327: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:21:51,328: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:21:51,328: INFO: common: created directory at: artifacts]
+[2025-05-12 14:21:51,328: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-12 14:21:51,493: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 14:21:51,525: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 14:21:51,526: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 14:21:51,551: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-12 14:21:51,551: INFO: main: *******************]
+[2025-05-12 14:21:51,551: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-12 14:21:51,551: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:21:51,552: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:21:51,552: INFO: common: created directory at: artifacts]
+[2025-05-12 14:21:51,552: INFO: common: created directory at: artifacts/training]
+[2025-05-12 14:29:16,316: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-12 14:29:16,317: INFO: main: *******************]
+[2025-05-12 14:29:16,317: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-12 14:29:16,318: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:29:16,318: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:29:16,319: INFO: common: created directory at: artifacts]
+[2025-05-12 14:31:32,360: INFO: common: json file saved at: scores.json]
+[2025-05-12 14:31:32,361: INFO: common: json file saved at: scores.json]
+[2025-05-12 14:31:32,361: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-12 14:33:33,289: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 14:33:33,290: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:33:33,291: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:33:33,291: INFO: common: created directory at: artifacts]
+[2025-05-12 14:33:33,291: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 14:33:33,291: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 14:33:49,896: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 14:33:54,713: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-12 14:33:54,713: INFO: main: *******************]
+[2025-05-12 14:33:54,713: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-12 14:33:54,714: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:33:54,714: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:33:54,714: INFO: common: created directory at: artifacts]
+[2025-05-12 14:33:54,714: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-12 14:33:54,877: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 14:33:54,909: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 14:33:54,910: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-12 14:33:54,935: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-12 14:33:54,935: INFO: main: *******************]
+[2025-05-12 14:33:54,935: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-12 14:33:54,936: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:33:54,936: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:33:54,936: INFO: common: created directory at: artifacts]
+[2025-05-12 14:33:54,937: INFO: common: created directory at: artifacts/training]
+[2025-05-12 14:41:18,733: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-12 14:41:18,734: INFO: main: *******************]
+[2025-05-12 14:41:18,734: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-12 14:41:18,735: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 14:41:18,735: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 14:41:18,735: INFO: common: created directory at: artifacts]
+[2025-05-12 14:43:32,941: INFO: common: json file saved at: scores.json]
+[2025-05-12 14:43:32,941: INFO: common: json file saved at: scores.json]
+[2025-05-12 14:43:33,658: INFO: builder_impl: Assets written to: /var/folders/qv/03zp2qbx5dvd8k_vpgjwc23w0000gn/T/tmpwx7ak8s3/model/data/model/assets]
+[2025-05-12 14:43:36,722: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-12 16:12:18,201: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 16:12:18,202: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:12:18,204: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:12:18,204: INFO: common: created directory at: artifacts]
+[2025-05-12 16:12:18,204: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 16:12:18,204: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 16:12:40,310: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 16:12:44,957: INFO: stage_01_data_ingestion: >>>> stage Data Ingestion stage completed <<<<< 
+
+ X=====X]
+[2025-05-12 16:30:29,996: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 16:30:29,997: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:30:29,998: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:30:29,998: INFO: common: created directory at: artifacts]
+[2025-05-12 16:30:29,998: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 16:30:29,998: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 16:30:47,891: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 16:30:52,764: INFO: stage_01_data_ingestion: >>>> stage Data Ingestion stage completed <<<<< 
+
+ X=====X]
+[2025-05-12 16:31:10,635: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:31:18,190: INFO: stage_02_prepare_base_model: ******************]
+[2025-05-12 16:31:18,190: INFO: stage_02_prepare_base_model: >>>>>>>> stage Prepare Base Model started <<<<<<<<]
+[2025-05-12 16:31:18,191: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:31:18,192: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:31:18,192: INFO: common: created directory at: artifacts]
+[2025-05-12 16:31:18,192: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-12 16:31:18,344: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-12 16:31:18,376: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-12 16:31:18,397: INFO: stage_02_prepare_base_model: >>>>>>>> stage Prepare Base Model completed 
+
+x======x]
+[2025-05-12 16:35:51,079: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-12 16:35:51,080: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:35:51,081: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:35:51,082: INFO: common: created directory at: artifacts]
+[2025-05-12 16:35:51,082: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-12 16:35:51,082: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 16:36:08,059: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-12 16:36:12,830: INFO: stage_01_data_ingestion: >>>> stage Data Ingestion stage completed <<<<< 
+
+ X=====X]
+[2025-05-12 16:36:18,928: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:36:20,165: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:36:20,165: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:36:20,166: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:36:20,166: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:36:20,166: INFO: common: created directory at: artifacts]
+[2025-05-12 16:36:20,166: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:36:20,286: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:36:20,739: ERROR: stage_03_model_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 25, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.train()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in train
+    self.model.fit(
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-12 16:37:59,290: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:38:00,232: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:38:00,232: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:38:00,233: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:38:00,234: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:38:00,234: INFO: common: created directory at: artifacts]
+[2025-05-12 16:38:00,234: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:38:00,302: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:38:04,490: ERROR: stage_03_model_training: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 27, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 20, in main
+    training.train()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 75, in train
+    self.model.fit(
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py", line 329, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2025-05-12 16:39:28,402: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:39:29,220: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:39:29,220: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:39:29,220: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:39:29,221: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:39:29,221: INFO: common: created directory at: artifacts]
+[2025-05-12 16:39:29,221: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:39:29,288: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:39:33,404: ERROR: stage_03_model_training: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 27, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 20, in main
+    training.train()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 76, in train
+    self.model.fit(
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py", line 329, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2025-05-12 16:40:36,076: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:40:36,890: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:40:36,890: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:40:36,891: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:40:36,891: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:40:36,891: INFO: common: created directory at: artifacts]
+[2025-05-12 16:40:36,891: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:40:36,957: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:40:36,958: ERROR: stage_03_model_training: 'TrainingConfig' object has no attribute 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 27, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 18, in main
+    training.get_base_model()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 20, in get_base_model
+    optimizer=tf.keras.optimizers.Adam(learning_rate=self.config.params_learning_rate),
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrainingConfig' object has no attribute 'params_learning_rate'
+[2025-05-12 16:41:01,497: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:41:02,300: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:41:02,300: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:41:02,301: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:41:02,301: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:41:02,301: INFO: common: created directory at: artifacts]
+[2025-05-12 16:41:02,301: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:41:02,367: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:41:06,521: ERROR: stage_03_model_training: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 27, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 20, in main
+    training.train()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 77, in train
+    self.model.fit(
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py", line 329, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2025-05-12 16:41:29,215: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:41:30,033: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:41:30,033: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:41:30,034: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:41:30,034: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:41:30,034: INFO: common: created directory at: artifacts]
+[2025-05-12 16:41:30,035: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:41:30,100: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:41:34,118: ERROR: stage_03_model_training: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 27, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 20, in main
+    training.train()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 76, in train
+    self.model.fit(
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/optimizers/base_optimizer.py", line 329, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <Variable path=dense/kernel, shape=(25088, 2), dtype=float32, value=[[ 0.0149847  -0.00344465]
+ [-0.01327077 -0.01277969]
+ [ 0.00587692 -0.00650656]
+ ...
+ [ 0.01037668 -0.0151264 ]
+ [-0.00480788 -0.01268142]
+ [-0.00276472  0.0055346 ]]>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2025-05-12 16:41:45,177: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:41:45,996: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:41:45,996: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:41:45,997: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:41:45,997: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:41:45,997: INFO: common: created directory at: artifacts]
+[2025-05-12 16:41:45,998: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:41:46,064: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:41:46,449: ERROR: stage_03_model_training: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 26, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 19, in main
+    training.train()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 76, in train
+    self.model.fit(
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py", line 158, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-05-12 16:45:02,650: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:45:03,437: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:45:03,437: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:45:03,437: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:45:03,438: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:45:03,438: INFO: common: created directory at: artifacts]
+[2025-05-12 16:45:03,438: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:45:03,503: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:45:03,504: ERROR: stage_03_model_training: 'TrainingConfig' object has no attribute 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 26, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 17, in main
+    training.get_base_model()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 20, in get_base_model
+    optimizer=tf.keras.optimizers.Adam(learning_rate=self.config.params_learning_rate),
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrainingConfig' object has no attribute 'params_learning_rate'
+[2025-05-12 16:46:13,207: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:46:14,003: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:46:14,003: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:46:14,003: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:46:14,004: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:46:14,004: INFO: common: created directory at: artifacts]
+[2025-05-12 16:46:14,004: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:46:14,069: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:46:14,070: ERROR: stage_03_model_training: 'TrainingConfig' object has no attribute 'params_learning_rate']
+Traceback (most recent call last):
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 26, in <module>
+    obj.main()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 17, in main
+    training.get_base_model()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/components/model_training.py", line 21, in get_base_model
+    optimizer=tf.keras.optimizers.Adam(learning_rate=self.config.params_learning_rate),
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrainingConfig' object has no attribute 'params_learning_rate'
+[2025-05-12 16:47:56,326: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 16:47:57,134: INFO: stage_03_model_training: *********************]
+[2025-05-12 16:47:57,134: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<<<]
+[2025-05-12 16:47:57,135: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 16:47:57,135: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 16:47:57,135: INFO: common: created directory at: artifacts]
+[2025-05-12 16:47:57,135: INFO: common: created directory at: artifacts/training]
+[2025-05-12 16:47:57,202: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 16:55:45,981: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-05-12 16:55:46,020: INFO: stage_03_model_training:  >>>>>>> stage Training completed <<<<<<<
+
+x======x]
+[2025-05-12 17:29:45,035: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 17:30:18,671: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 17:30:55,138: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 17:30:57,041: INFO: stage_04_model_evaluation: *******************]
+[2025-05-12 17:30:57,042: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-12 17:30:57,042: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-12 17:30:57,043: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-12 17:30:57,044: INFO: common: created directory at: artifacts]
+[2025-05-12 17:30:57,153: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 17:33:13,154: INFO: common: json file saved at: scores.json]
+[2025-05-12 17:33:13,154: INFO: common: json file saved at: scores.json]
+[2025-05-12 17:33:13,154: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-12 18:01:01,619: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:02:12,506: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:02:13,636: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-12 18:02:13,636: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-12 18:02:27,341: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:02:27] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:02:27,443: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:02:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-05-12 18:02:35,402: INFO: _internal: 192.168.1.167 - - [12/May/2025 18:02:35] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:02:35,433: INFO: _internal: 192.168.1.167 - - [12/May/2025 18:02:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-05-12 18:02:39,504: INFO: _internal: 192.168.1.167 - - [12/May/2025 18:02:39] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:02:43,062: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:02:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:17,525: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:17] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:03:17,542: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:18,438: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:18] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:03:18,451: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:19,103: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:19] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:03:19,114: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:03:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-12 18:03:37,709: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:04:40,715: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:04:41,518: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-12 18:04:41,518: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-12 18:04:44,364: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:04:44] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:14,973: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:14] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:15,993: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:15] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:35,775: INFO: utils: NumExpr defaulting to 10 threads.]
+[2025-05-12 18:05:36,730: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-12 18:05:36,730: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-12 18:05:37,837: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:37] "GET / HTTP/1.1" 200 -]
+[2025-05-12 18:05:56,927: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 18:05:57,109: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:57] "POST /predict HTTP/1.1" 200 -]
+[2025-05-12 18:06:09,637: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-12 18:06:09,765: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:06:09] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:05:22,929: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-13 13:05:22,930: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:05:22,931: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:05:22,931: INFO: common: created directory at: artifacts]
+[2025-05-13 13:05:22,931: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-13 13:05:22,931: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-13 13:06:50,663: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-13 13:06:56,240: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-13 13:06:56,240: INFO: main: *******************]
+[2025-05-13 13:06:56,240: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-13 13:06:56,241: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:06:56,242: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:06:56,242: INFO: common: created directory at: artifacts]
+[2025-05-13 13:06:56,242: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-13 13:06:56,455: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-13 13:06:56,516: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-13 13:06:56,517: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-13 13:06:56,543: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-13 13:06:56,543: INFO: main: *******************]
+[2025-05-13 13:06:56,543: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-13 13:06:56,543: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:06:56,544: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:06:56,544: INFO: common: created directory at: artifacts]
+[2025-05-13 13:06:56,544: INFO: common: created directory at: artifacts/training]
+[2025-05-13 13:06:56,633: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-13 13:06:56,633: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-13 13:10:41,323: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.250.21.74:8080]
+[2025-05-13 13:10:41,324: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-13 13:10:48,870: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:10:48] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:11:25,264: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/prediction.py", line 12, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/saving/saving_api.py", line 238, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/engine/base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+[2025-05-13 13:11:25,277: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:11:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-05-13 13:18:38,723: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.250.21.74:8080]
+[2025-05-13 13:18:38,723: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-13 13:18:44,266: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:18:44] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:18:48,852: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/prediction.py", line 12, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"), compile=False)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/saving/saving_api.py", line 238, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/engine/base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+[2025-05-13 13:18:48,859: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:18:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-05-13 13:22:34,603: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:22:34] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:23:04,479: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-13 13:23:04,479: INFO: main: *******************]
+[2025-05-13 13:23:04,479: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-13 13:23:04,481: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:23:04,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:23:04,482: INFO: common: created directory at: artifacts]
+[2025-05-13 13:25:21,237: INFO: common: json file saved at: scores.json]
+[2025-05-13 13:25:21,237: INFO: common: json file saved at: scores.json]
+[2025-05-13 13:25:21,237: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-13 13:27:26,549: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.250.21.74:8080]
+[2025-05-13 13:27:26,549: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-13 13:27:33,617: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:27:33] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:27:39,407: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:27:39] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:28:15,012: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:28:15] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:28:24,163: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:28:24] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:31:37,692: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:31:37] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:08:44,705: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:08:44] "GET / HTTP/1.1" 200 -]
+[2025-05-13 14:08:49,575: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x3165959d0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-13 14:08:49,576: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:08:49] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:09:00,546: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x316595c10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-13 14:09:00,547: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:09:00] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:34:42,607: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:34:42] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:36:03,402: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:36:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-13 14:36:19,297: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:36:19] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 15:38:50,718: INFO: _internal: 127.0.0.1 - - [13/May/2025 15:38:50] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 15:39:05,466: INFO: _internal: 127.0.0.1 - - [13/May/2025 15:39:05] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 15:39:15,748: INFO: _internal: 127.0.0.1 - - [13/May/2025 15:39:15] "POST /predict HTTP/1.1" 200 -]
+[2025-05-21 18:18:22,575: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-21 18:18:22,575: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-21 18:18:28,139: INFO: _internal: 127.0.0.1 - - [21/May/2025 18:18:28] "GET / HTTP/1.1" 200 -]
+[2025-05-21 18:19:24,887: INFO: _internal: 127.0.0.1 - - [21/May/2025 18:19:24] "POST /predict HTTP/1.1" 200 -]
+[2025-05-21 18:21:28,237: INFO: _internal: 127.0.0.1 - - [21/May/2025 18:21:28] "POST /predict HTTP/1.1" 200 -]
+[2025-05-21 18:22:09,277: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:22:09,278: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:22:09,279: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:22:09,279: INFO: common: created directory at: artifacts]
+[2025-05-21 18:22:09,279: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-21 18:22:09,279: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 18:22:25,279: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 18:22:39,433: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-21 18:22:39,434: INFO: main: *******************]
+[2025-05-21 18:22:39,434: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-21 18:22:39,439: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:22:39,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:22:39,441: INFO: common: created directory at: artifacts]
+[2025-05-21 18:22:39,441: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-21 18:22:39,787: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-21 18:22:39,832: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 18:22:39,834: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 18:22:39,872: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-21 18:22:39,873: INFO: main: *******************]
+[2025-05-21 18:22:39,873: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-21 18:22:39,874: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:22:39,874: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:22:39,875: INFO: common: created directory at: artifacts]
+[2025-05-21 18:22:39,875: INFO: common: created directory at: artifacts/training]
+[2025-05-21 18:22:39,984: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 18:22:39,984: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 18:41:24,158: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-21 18:41:24,168: INFO: main: *******************]
+[2025-05-21 18:41:24,169: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-21 18:41:24,192: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:41:24,198: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:41:24,200: INFO: common: created directory at: artifacts]
+[2025-05-21 18:44:24,555: INFO: common: json file saved at: scores.json]
+[2025-05-21 18:44:24,567: INFO: common: json file saved at: scores.json]
+[2025-05-21 18:44:24,572: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-21 19:53:49,199: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:53:49,203: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:53:49,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 19:53:49,206: INFO: common: created directory at: artifacts]
+[2025-05-21 19:53:49,206: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-21 19:53:49,206: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 19:54:08,910: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 19:54:30,778: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-21 19:54:30,778: INFO: main: *******************]
+[2025-05-21 19:54:30,778: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-21 19:54:30,780: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:54:30,781: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 19:54:30,782: INFO: common: created directory at: artifacts]
+[2025-05-21 19:54:30,782: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-21 19:54:31,239: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-21 19:54:31,296: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 19:54:31,297: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 19:54:31,405: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-21 19:54:31,405: INFO: main: *******************]
+[2025-05-21 19:54:31,405: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-21 19:54:31,406: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:54:31,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 19:54:31,408: INFO: common: created directory at: artifacts]
+[2025-05-21 19:54:31,408: INFO: common: created directory at: artifacts/training]
+[2025-05-21 19:54:31,509: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 19:54:31,510: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 20:12:59,736: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-21 20:12:59,783: INFO: main: *******************]
+[2025-05-21 20:12:59,783: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-21 20:12:59,801: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 20:12:59,805: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 20:12:59,806: INFO: common: created directory at: artifacts]
+[2025-05-21 20:15:41,524: INFO: common: json file saved at: scores.json]
+[2025-05-21 20:15:41,529: INFO: common: json file saved at: scores.json]
+[2025-05-21 20:15:41,530: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
