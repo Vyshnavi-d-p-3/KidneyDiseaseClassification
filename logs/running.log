@@ -526,3 +526,230 @@ x==========x]
 [2025-05-12 18:05:57,109: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:05:57] "POST /predict HTTP/1.1" 200 -]
 [2025-05-12 18:06:09,637: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2025-05-12 18:06:09,765: INFO: _internal: 127.0.0.1 - - [12/May/2025 18:06:09] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:05:22,929: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-13 13:05:22,930: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:05:22,931: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:05:22,931: INFO: common: created directory at: artifacts]
+[2025-05-13 13:05:22,931: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-13 13:05:22,931: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-13 13:06:50,663: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-13 13:06:56,240: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-13 13:06:56,240: INFO: main: *******************]
+[2025-05-13 13:06:56,240: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-13 13:06:56,241: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:06:56,242: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:06:56,242: INFO: common: created directory at: artifacts]
+[2025-05-13 13:06:56,242: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-13 13:06:56,455: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-13 13:06:56,516: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-13 13:06:56,517: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-13 13:06:56,543: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-13 13:06:56,543: INFO: main: *******************]
+[2025-05-13 13:06:56,543: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-13 13:06:56,543: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:06:56,544: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:06:56,544: INFO: common: created directory at: artifacts]
+[2025-05-13 13:06:56,544: INFO: common: created directory at: artifacts/training]
+[2025-05-13 13:06:56,633: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-13 13:06:56,633: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-13 13:10:41,323: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.250.21.74:8080]
+[2025-05-13 13:10:41,324: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-13 13:10:48,870: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:10:48] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:11:25,264: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/prediction.py", line 12, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/saving/saving_api.py", line 238, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/engine/base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+[2025-05-13 13:11:25,277: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:11:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-05-13 13:18:38,723: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.250.21.74:8080]
+[2025-05-13 13:18:38,723: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-13 13:18:44,266: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:18:44] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:18:48,852: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "/Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/src/cnnClassifier/pipeline/prediction.py", line 12, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"), compile=False)
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/saving/saving_api.py", line 238, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/engine/base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+[2025-05-13 13:18:48,859: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:18:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-05-13 13:22:34,603: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:22:34] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:23:04,479: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-13 13:23:04,479: INFO: main: *******************]
+[2025-05-13 13:23:04,479: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-13 13:23:04,481: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:23:04,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:23:04,482: INFO: common: created directory at: artifacts]
+[2025-05-13 13:25:21,237: INFO: common: json file saved at: scores.json]
+[2025-05-13 13:25:21,237: INFO: common: json file saved at: scores.json]
+[2025-05-13 13:25:21,237: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-13 13:27:26,549: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.250.21.74:8080]
+[2025-05-13 13:27:26,549: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-13 13:27:33,617: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:27:33] "GET / HTTP/1.1" 200 -]
+[2025-05-13 13:27:39,407: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:27:39] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:28:15,012: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:28:15] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:28:24,163: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:28:24] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 13:31:37,692: INFO: _internal: 127.0.0.1 - - [13/May/2025 13:31:37] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:08:44,705: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:08:44] "GET / HTTP/1.1" 200 -]
+[2025-05-13 14:08:49,575: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x3165959d0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-13 14:08:49,576: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:08:49] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:09:00,546: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x316595c10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-05-13 14:09:00,547: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:09:00] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:34:42,607: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:34:42] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 14:36:03,402: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:36:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -]
+[2025-05-13 14:36:19,297: INFO: _internal: 127.0.0.1 - - [13/May/2025 14:36:19] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 15:38:50,718: INFO: _internal: 127.0.0.1 - - [13/May/2025 15:38:50] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 15:39:05,466: INFO: _internal: 127.0.0.1 - - [13/May/2025 15:39:05] "POST /predict HTTP/1.1" 200 -]
+[2025-05-13 15:39:15,748: INFO: _internal: 127.0.0.1 - - [13/May/2025 15:39:15] "POST /predict HTTP/1.1" 200 -]
+[2025-05-21 18:18:22,575: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.167:8080]
+[2025-05-21 18:18:22,575: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-21 18:18:28,139: INFO: _internal: 127.0.0.1 - - [21/May/2025 18:18:28] "GET / HTTP/1.1" 200 -]
+[2025-05-21 18:19:24,887: INFO: _internal: 127.0.0.1 - - [21/May/2025 18:19:24] "POST /predict HTTP/1.1" 200 -]
+[2025-05-21 18:21:28,237: INFO: _internal: 127.0.0.1 - - [21/May/2025 18:21:28] "POST /predict HTTP/1.1" 200 -]
+[2025-05-21 18:22:09,277: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:22:09,278: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:22:09,279: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:22:09,279: INFO: common: created directory at: artifacts]
+[2025-05-21 18:22:09,279: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-21 18:22:09,279: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 18:22:25,279: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 18:22:39,433: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-21 18:22:39,434: INFO: main: *******************]
+[2025-05-21 18:22:39,434: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-21 18:22:39,439: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:22:39,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:22:39,441: INFO: common: created directory at: artifacts]
+[2025-05-21 18:22:39,441: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-21 18:22:39,787: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-21 18:22:39,832: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 18:22:39,834: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 18:22:39,872: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-21 18:22:39,873: INFO: main: *******************]
+[2025-05-21 18:22:39,873: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-21 18:22:39,874: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:22:39,874: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:22:39,875: INFO: common: created directory at: artifacts]
+[2025-05-21 18:22:39,875: INFO: common: created directory at: artifacts/training]
+[2025-05-21 18:22:39,984: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 18:22:39,984: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 18:41:24,158: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-21 18:41:24,168: INFO: main: *******************]
+[2025-05-21 18:41:24,169: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-21 18:41:24,192: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:41:24,198: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 18:41:24,200: INFO: common: created directory at: artifacts]
+[2025-05-21 18:44:24,555: INFO: common: json file saved at: scores.json]
+[2025-05-21 18:44:24,567: INFO: common: json file saved at: scores.json]
+[2025-05-21 18:44:24,572: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-21 19:53:49,199: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:53:49,203: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:53:49,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 19:53:49,206: INFO: common: created directory at: artifacts]
+[2025-05-21 19:53:49,206: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-21 19:53:49,206: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 19:54:08,910: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-21 19:54:30,778: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-21 19:54:30,778: INFO: main: *******************]
+[2025-05-21 19:54:30,778: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-21 19:54:30,780: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:54:30,781: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 19:54:30,782: INFO: common: created directory at: artifacts]
+[2025-05-21 19:54:30,782: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-21 19:54:31,239: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-21 19:54:31,296: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 19:54:31,297: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-21 19:54:31,405: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-21 19:54:31,405: INFO: main: *******************]
+[2025-05-21 19:54:31,405: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-21 19:54:31,406: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:54:31,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 19:54:31,408: INFO: common: created directory at: artifacts]
+[2025-05-21 19:54:31,408: INFO: common: created directory at: artifacts/training]
+[2025-05-21 19:54:31,509: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 19:54:31,510: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-21 20:12:59,736: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-21 20:12:59,783: INFO: main: *******************]
+[2025-05-21 20:12:59,783: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-21 20:12:59,801: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-21 20:12:59,805: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-21 20:12:59,806: INFO: common: created directory at: artifacts]
+[2025-05-21 20:15:41,524: INFO: common: json file saved at: scores.json]
+[2025-05-21 20:15:41,529: INFO: common: json file saved at: scores.json]
+[2025-05-21 20:15:41,530: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

@@ -1,4 +1,4 @@
-from cnnClassifier.config.configuration import ConfigurationManager
+from cnnClassifier.config.configuration_old import ConfigurationManager
 from cnnClassifier.components.model_evaluation_mlflow import Evaluation
 from cnnClassifier import logger
 

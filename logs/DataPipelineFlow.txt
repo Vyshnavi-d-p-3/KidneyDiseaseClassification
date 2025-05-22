@@ -1,0 +1,129 @@
+(kidney) .venvvyshu@Vyshnavis-MacBook-Pro KidneyDiseaseClassification % python main.py
+[2025-05-13 13:05:22,929: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-13 13:05:22,930: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:05:22,931: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:05:22,931: INFO: common: created directory at: artifacts]
+[2025-05-13 13:05:22,931: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-13 13:05:22,931: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+Downloading...
+From (original): https://drive.google.com/uc?/export=download&id=1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0
+From (redirected): https://drive.google.com/uc?%2Fexport=download&id=1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0&confirm=t&uuid=c3051328-7c52-4bae-9905-1ca3e173cd54
+To: /Applications/MyFiles/Study/MSStudy/SJSU/CMPE-258-DeepLearning/project/KidneyDiseaseClassification/artifacts/data_ingestion/data.zip
+100%|███████████████████████████████████████████████████████████████████████████████████████| 943M/943M [01:25<00:00, 11.0MB/s]
+[2025-05-13 13:06:50,663: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wx5hBwMOX5VHIlycJ_nsN_BqzlRAl0M0/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-13 13:06:56,240: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-13 13:06:56,240: INFO: main: *******************]
+[2025-05-13 13:06:56,240: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-13 13:06:56,241: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:06:56,242: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:06:56,242: INFO: common: created directory at: artifacts]
+[2025-05-13 13:06:56,242: INFO: common: created directory at: artifacts/prepare_base_model]
+/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+[2025-05-13 13:06:56,455: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-13 13:06:56,516: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-05-13 13:06:56,517: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+ flatten (Flatten)           (None, 25088)             0         
+                                                                 
+ dense (Dense)               (None, 2)                 50178     
+                                                                 
+=================================================================
+Total params: 14764866 (56.32 MB)
+Trainable params: 50178 (196.01 KB)
+Non-trainable params: 14714688 (56.13 MB)
+_________________________________________________________________
+[2025-05-13 13:06:56,543: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-13 13:06:56,543: INFO: main: *******************]
+[2025-05-13 13:06:56,543: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-13 13:06:56,543: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:06:56,544: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:06:56,544: INFO: common: created directory at: artifacts]
+[2025-05-13 13:06:56,544: INFO: common: created directory at: artifacts/training]
+[2025-05-13 13:06:56,633: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-05-13 13:06:56,633: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+Found 1471 images belonging to 2 classes.
+Found 5889 images belonging to 2 classes.
+Epoch 1/2
+368/368 [==============================] - 483s 1s/step - loss: 23.3427 - accuracy: 0.7741 - val_loss: 11.9711 - val_accuracy: 0.8235
+Epoch 2/2
+368/368 [==============================] - 484s 1s/step - loss: 17.7243 - accuracy: 0.8553 - val_loss: 18.6411 - val_accuracy: 0.8201
+2025-05-13 13:23:04.448131: W tensorflow/core/framework/op_kernel.cc:1816] INVALID_ARGUMENT: ValueError: Could not find callback with key=pyfunc_31 in the registry.
+Traceback (most recent call last):
+
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/ops/script_ops.py", line 256, in __call__
+    raise ValueError(f"Could not find callback with key={token} in the "
+
+ValueError: Could not find callback with key=pyfunc_31 in the registry.
+
+
+2025-05-13 13:23:04.449353: W tensorflow/core/kernels/data/generator_dataset_op.cc:108] Error occurred when finalizing GeneratorDataset iterator: INVALID_ARGUMENT: ValueError: Could not find callback with key=pyfunc_31 in the registry.
+Traceback (most recent call last):
+
+  File "/opt/anaconda3/envs/kidney/lib/python3.8/site-packages/tensorflow/python/ops/script_ops.py", line 256, in __call__
+    raise ValueError(f"Could not find callback with key={token} in the "
+
+ValueError: Could not find callback with key=pyfunc_31 in the registry.
+
+
+         [[{{node EagerPyFunc}}]]
+[2025-05-13 13:23:04,479: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-05-13 13:23:04,479: INFO: main: *******************]
+[2025-05-13 13:23:04,479: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-13 13:23:04,481: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-05-13 13:23:04,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-13 13:23:04,482: INFO: common: created directory at: artifacts]
+Found 2207 images belonging to 2 classes.
+138/138 [==============================] - 137s 989ms/step - loss: 12.4261 - accuracy: 0.8740
+[2025-05-13 13:25:21,237: INFO: common: json file saved at: scores.json]
+[2025-05-13 13:25:21,237: INFO: common: json file saved at: scores.json]
+[2025-05-13 13:25:21,237: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
